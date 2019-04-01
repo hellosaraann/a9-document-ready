@@ -2,18 +2,22 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Trirong:100i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
     <div id="myApp">
-      <h1>{{ message }}</h1>
-      <ul>
-        <li v-for='value in llamaFacts'>
-          {{ value }}
+      <h1>All About Llamas</h1>
+      <h2>Facts From the Internet</h2>
+      <h3>{{ message }}</h3>
+      <ol>
+        <li v-for='llamaFact in llamaFacts'
+            v-if ='llamaFact.id !== "llamaDesign"'>
+          {{ llamaFact.text }}
         </li>
-      </ul>
+      </ol>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
