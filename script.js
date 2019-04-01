@@ -1,7 +1,7 @@
 var llamaApp = new Vue ({
   el: '#myApp',
   data: {
-    message: 'Any non-factual opinions of the author that accidentally made it to this list are hidden.',
+    message: 'Any non-factual opinions of the author that accidentally made it to this list have been hidden for your convenience.',
     llamaFacts: [
       {
         id: 'llamaBreed',
@@ -21,7 +21,7 @@ var llamaApp = new Vue ({
       },
       {
         id: 'llamaSmell',
-        text: 'For outdoor animals, \"...they do not smell bad.\"'
+        text: 'For outdoor animals, \"...[llamas] do not smell bad.\"'
       },
       {
         id: 'llamaDesign',
